@@ -1,0 +1,31 @@
+## 个人笔记，随笔记录
+
+### 目录
+
+* 主页
+  * 随笔
+    * [git代码管理使用](Document/git代码管理使用.md)
+    * [git修改分支名称](Document/git修改分支名称.md)
+    * [go常用包](Document/go常用包.md)
+    * [go环境](Document/go环境.md)
+    * [Java8使用stream方式处理数据](Document/Java8使用stream方式处理数据.md)
+    * [JAVA常见问题以及答案](Document/JAVA常见问题以及答案.md)
+    * [java教程](Document/java教程.md)
+    * [java理论小记](Document/java理论小记.md)
+    * [Java线程面试题](Document/Java线程面试题.md)
+    * [jmeter脚本开发](Document/jmeter脚本开发.md)
+    * [k8s](Document/k8s.md)
+    * [linux常用30个命令技巧](Document/linux%20常用30个命令技巧.md)
+    * [Linux经典命令](Document/Linux经典命令.md)
+    * [SpringBoot整合Elastricsearch](Document/SpringBoot整合Elastricsearch%20+%20LogStash%20+%20Kibana.md)
+    * [Vuex记录笔记](Document/Vuex记录笔记.md)
+    * [vue组件之间传递参数](Document/vue组件之间传递参数.md)
+    * [流量回放实现方案](Document/流量回放实现方案.md)
+  * 其他
+    * [Vim日常使用](Document/Vim日常使用.md)
+    * [vim操作记录](Document/vim操作记录.md)
+    * [高效能人士的七个习惯](Document/高效能人士的七个习惯.md)
+  * VimTutor
+    * [VimTutor](VimTutor/CODE_OF_CONDUCT.md)
+    * [Vimtutor](VimTutor/Vimtutor.txt)
+    * [Vim日常使用](VimTutor/README_NOTE.md)

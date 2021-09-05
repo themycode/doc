@@ -4,9 +4,11 @@ tags: 规则文档
 notebook: wiki
 ---
 ## 编辑操作 可视模式 （选取功能）
+
 如果编辑代码或需要行内容的编辑，需要编辑引号中文本或者是替换
 
-** 【vaw】指令 选中第一个单词 **
+**【vaw】指令 选中第一个单词**
+
 - v 是 选择模式
 - a 是 [a]一个
 - w 是 word单词
@@ -25,11 +27,16 @@ system.out.print("hello world");
 网页html文件中的xml标签格式
 【vit】 -> 两个标签中的文字
 【vat】 -> 包含标签的整个元素
+
+```html
 <HTML>
 <body>
+    // vit vat 快速选择tag
     <a>hello world</a>
 </body>
 </HTML>
+```
+
 选择模式的三种状态：
 小写v指令：选取以当前行为单位
 大写V指令：以行为单位，左下方出现VISUAL LINE，选取方式，仅可以使用垂直的移动指令
@@ -43,15 +50,14 @@ p 指令 粘贴
 y$ 拷贝到行尾的内容
 
 ## 标签书签指令
+
 m 代表的是mark ，然后在加任意 字母 或者数字
 
 例如 【 mq 指令】 当前光标的位置，记录在q的寄存器中
-移动到其他的位置，想要快速的跳回刚才的地方 
+移动到其他的位置，想要快速的跳回刚才的地方
 【`q 指令】 跳回到刚才的位置 ，使用波浪号这个键
 
-
-
-#d 移动操作
+## 移动操作
 
 > d 向右移动到文字结尾  
 e 移动到符号结尾  
@@ -68,16 +74,17 @@ d$ 删除光标到行尾的字符
 d2w 光标移动到2个大写单词，输入d2w删除单词  
 dd 删除当前行后，输入p粘贴到光标下  
 
-# vim插件操作
+## vim插件操作
 
 - NERDTree 打开导航栏
 - NERDTreeClose 关闭导航栏
 - CommandT 快速搜索文件命令
 
-# 状态栏插件安装
+## 状态栏插件安装
+
 >Airline 可以在 vim 中显示更友好的状态栏，再配以漂亮的配色
-Airline https://github.com/vim-airline/vim-airline
-Airline Themes https://github.com/vim-airline/vim-airline-themes
+Airline <https://github.com/vim-airline/vim-airline>
+Airline Themes <https://github.com/vim-airline/vim-airline-themes>
 添加 .vimrc 配置
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
@@ -88,7 +95,6 @@ set laststatus=2    " 始终显示状态栏
 let g:airline#extensions#tabline#enabled=1    " 开启 tab 栏
 执行 :AirlineTheme simple 应用 simple 样式，或者修改 .vimrc 文件，添加如
 
-
 ## 寄存器指令
 
 例如：输入【qq】 下方出现 recording @q 代表开始记录指令的执行动作
@@ -98,7 +104,6 @@ let g:airline#extensions#tabline#enabled=1    " 开启 tab 栏
 结果0j 指令 移动到下一行的开头，为了下一个指令的执行
 完成指令以后，在输入 【q】 结束集合指令的录制
 
-
 执行寄存器的集合指令
 【@q 指令】 可以执行一次
 【@@ 指令】 重复上一次的集合指令动作
@@ -106,7 +111,6 @@ let g:airline#extensions#tabline#enabled=1    " 开启 tab 栏
 追加指令录制
 使用按键q指令加上大写Q 就可以不上缺少的指令
 qQ 指令 追加代号q的集合指令
-
 
 ## 其他命令操作
 

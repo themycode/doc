@@ -6,6 +6,7 @@ notebook: wiki
 
 
 - [VS Code 开发环境所需支持模块，全部安装完成会生成 17 个可执行文件](#vs-code-开发环境所需支持模块全部安装完成会生成-17-个可执行文件)
+- [go 代码注意事项](#go-代码注意事项)
   - [golang.org/x/](#golangorgx)
   - [go install](#go-install)
   - [其他包 (install || import)](#其他包-install--import)
@@ -21,6 +22,18 @@ notebook: wiki
     - [最后](#最后)
 
 ## VS Code 开发环境所需支持模块，全部安装完成会生成 17 个可执行文件
+
+## go 代码注意事项
+
+0. channel 没有性能瓶颈,除非大规模亿万级dua
+1. sync.pool 也经常会用到
+2. <https://pkg.go.dev/golang.org/x/sync/errgroup#example-Group-JustErrors>;
+ errgroup 多个业务处理场景数据处理,能按组进行管理,如果有报错会返回第一个报错
+3. 学任何语言看官方文档,少走弯路不要看二手资料,
+4. 平常基本用协程和channel,用轻量协程解决并发问题
+5. goroutine 野生的都会停止,在工程里如果有worker可以用goroutine池,一般不需要做
+6. goroutine用数组会有false sharing问题,需要在数组加 padding,如 [4433]padding
+7. b站用的微服务 kratos
 
 ### golang.org/x/
 
